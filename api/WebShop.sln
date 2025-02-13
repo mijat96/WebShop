@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebShop.Server", "WebShop\W
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebShop.AppHost", "WebShop.AppHost\WebShop.AppHost.csproj", "{5D6695F1-251E-4095-AFE3-A2F633C756B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebShop.Domain", "WebShop.Domain\WebShop.Domain.csproj", "{7C9516D0-CA8F-4E5D-BBBD-EB2A176D1EF1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebShop.Core", "WebShop.Domain\WebShop.Core.csproj", "{7C9516D0-CA8F-4E5D-BBBD-EB2A176D1EF1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
