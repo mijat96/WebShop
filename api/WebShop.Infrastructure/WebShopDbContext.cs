@@ -4,13 +4,14 @@ using WebShop.Domain.Models;
 
 namespace WebShop.Infrastructure
 {
-    public class WebShopDbContext(DbContextOptions<WebShopDbContext> options) : DbContext(options)
+    public class WebShopDbContext : DbContext
     {
-        public DbSet<Company> Company => Set<Company>();
-        public DbSet<Group> Group => Set<Group>();
-        public DbSet<Item> Item => Set<Item>();
-        public DbSet<Order> Order => Set<Order>();
-        public DbSet<OrderItem> OrderItem => Set<OrderItem>();
-        public DbSet<User> User => Set<User>();
+        public WebShopDbContext(DbContextOptions<WebShopDbContext> options) : base(options) { }
+        public DbSet<Company> Company { get; set; }
+        public DbSet<Group> Group { get; set; }
+        public DbSet<Item> Item { get; set; }
+        public DbSet<Order> Order { get; set; }
+        public DbSet<OrderItem> OrderItem { get; set; }
+        public DbSet<User> User { get; set; }
     }
 }
