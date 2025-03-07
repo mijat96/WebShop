@@ -1,5 +1,6 @@
 using Microsoft.Extensions.Configuration;
 using WebShop.Infrastructure;
+using WebShop.Server.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,6 +26,7 @@ if (app.Environment.IsDevelopment())
     // Add swagger
     app.UseSwagger();
     app.UseSwaggerUI();
+    app.ApplyMigrations();
 
 }
 
