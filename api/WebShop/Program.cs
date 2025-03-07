@@ -26,6 +26,7 @@ if (app.Environment.IsDevelopment())
     // Add swagger
     app.UseSwagger();
     app.UseSwaggerUI();
+    // Applay migrations on startup
     app.ApplyMigrations();
 
 }
