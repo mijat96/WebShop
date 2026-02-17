@@ -1,0 +1,79 @@
+@use './mixins.scss' as *;
+
+.mt {
+  @include size-modif() using($size) {
+    margin-top: $size !important;
+  }
+}
+
+.mb {
+  @include size-modif() using($size) {
+    margin-bottom: $size !important;
+  }
+}
+
+.ml {
+  @include size-modif() using($size) {
+    margin-left: $size !important;
+  }
+}
+
+.mr {
+  @include size-modif() using($size) {
+    margin-right: $size !important;
+  }
+}
+
+.my {
+  @include size-modif() using($size) {
+    margin: $size 0 !important;
+  }
+}
+
+.mx {
+  @include size-modif() using($size) {
+    margin: 0 $size !important;
+  }
+}
+
+.pt {
+  @include size-modif() using($size) {
+    padding-top: $size !important;
+  }
+}
+
+.pb {
+  @include size-modif() using($size) {
+    padding-bottom: $size !important;
+  }
+}
+
+.pl {
+  @include size-modif() using($size) {
+    padding-left: $size !important;
+  }
+}
+
+.pr {
+  @include size-modif() using($size) {
+    padding-right: $size !important;
+  }
+}
+
+.px {
+  @include size-modif() using($size) {
+    padding: 0 $size !important;
+  }
+}
+
+.py {
+  @include size-modif() using($size) {
+    padding: $size 0 !important;
+  }
+}
+
+.p {
+  @include size-modif() using($size) {
+    padding: $size !important;
+  }
+}

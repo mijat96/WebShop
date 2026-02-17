@@ -38,6 +38,7 @@
 @mixin color-modif() {
   $colors: (
     primary-text: $c-primary-text,
+    secondary-text: $c-plain,
   );
 
   @each $key, $val in $colors {
