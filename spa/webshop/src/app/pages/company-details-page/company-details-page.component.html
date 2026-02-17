@@ -12,7 +12,12 @@
         <div class="semi-bold-M-label mt--4">{{ item.price }}</div>
         <div class="semi-bold-S-label">{{ item.unit }}</div>
 
-        <p-button class="mt--2" label="Dodaj u korpu" [rounded]="true" />
+        <p-button
+          class="mt--2"
+          label="Dodaj u korpu"
+          [rounded]="true"
+          (click)="addItemToCart(item)"
+        />
       </div>
     }
   </div>
