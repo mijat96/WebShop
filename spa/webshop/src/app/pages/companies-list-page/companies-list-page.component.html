@@ -1,3 +1,14 @@
-<p>
-  companies-list-page works!
-</p>
+<p-iconfield>
+  <p-inputicon class="pi pi-search" />
+  <input type="text" pInputText placeholder="Search" #input (keyup)="search(input.value)" />
+</p-iconfield>
+@if (companies$ | async; as companies) {
+  <div class="grid">
+    @for (company of companies; track $index) {
+      <div class="grid__item">
+        <div class="img-holder"></div>
+        <div class="semi-bold-S-label mt--2">{{ company.name }}</div>
+      </div>
+    }
+  </div>
+}

@@ -1,0 +1,8 @@
+@use '../colors.scss' as *;
+
+.p-inputtext {
+  font-family: 'Noto Kufi Regular' !important;
+  font-size: 1.4rem !important;
+  background: $c-plain !important;
+  color: $c-primary-text !important;
+}

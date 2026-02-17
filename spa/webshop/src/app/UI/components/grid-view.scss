@@ -1,0 +1,24 @@
+.grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: calc((100% - 0rem) / 4);
+    background-color: #fff;
+    border-radius: 0.8rem;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.031372549);
+    padding: 2rem 3rem;
+    position: relative;
+    border: 0.1rem solid #ececec;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+}
