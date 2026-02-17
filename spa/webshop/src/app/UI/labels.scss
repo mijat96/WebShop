@@ -1,0 +1,178 @@
+@use './colors.scss' as *;
+@use './mixins.scss' as *;
+// font-regular
+.regular-XXS-label {
+  @include font($c-primary-text, 1.2rem);
+}
+
+.regular-XS-label {
+  @include font($c-primary-text, 1.4rem);
+}
+
+.regular-S-label {
+  @include font($c-primary-text, 1.6rem);
+}
+
+.regular-M-label {
+  @include font($c-primary-text, 1.8rem);
+}
+
+.regular-L-label {
+  @include font($c-primary-text, 2rem);
+}
+
+.regular-XL-label {
+  @include font($c-primary-text, 2.4rem);
+}
+
+.regular-XXL-label {
+  @include font($c-primary-text, 3.2rem);
+}
+
+.regular-main-label {
+  @include font($c-primary-text, 3.6rem);
+}
+
+// font bold
+
+.bold-XXS-label {
+  @include font-bold($c-primary-text, 1.2rem);
+}
+
+.bold-XS-label {
+  @include font-bold($c-primary-text, 1.4rem);
+}
+
+.bold-S-label {
+  @include font-bold($c-primary-text, 1.6rem);
+}
+
+.bold-M-label {
+  @include font-bold($c-primary-text, 1.8rem);
+}
+
+.bold-L-label {
+  @include font-bold($c-primary-text, 2rem);
+}
+
+.bold-XL-label {
+  @include font-bold($c-primary-text, 2.4rem);
+}
+
+.bold-XXL-label {
+  @include font-bold($c-primary-text, 2.8rem);
+}
+
+// font semi-bold
+
+.semi-bold-XXS-label {
+  @include font-semi-bold($c-primary-text, 1.2rem);
+}
+
+.semi-bold-XS-label {
+  @include font-semi-bold($c-primary-text, 1.4rem);
+}
+
+.semi-bold-S-label {
+  @include font-semi-bold($c-primary-text, 1.6rem);
+}
+
+.semi-bold-M-label {
+  @include font-semi-bold($c-primary-text, 1.8rem);
+}
+
+.semi-bold-L-label {
+  @include font-semi-bold($c-primary-text, 2rem);
+}
+
+.semi-bold-XL-label {
+  @include font-semi-bold($c-primary-text, 2.4rem);
+}
+
+.semi-bold-XXL-label {
+  @include font-semi-bold($c-primary-text, 3.2rem);
+}
+
+.semi-bold-main-label {
+  @include font-semi-bold($c-primary-text, 3.6rem);
+}
+
+.label {
+  @include color-modif();
+}
+
+// .sup {
+//   vertical-align: super;
+//   font-size: 0.8rem;
+//   color: $c-danger;
+// }
+
+.overflow-label {
+  @include font-overflow();
+  margin-right: 2rem;
+  &--1 {
+    @include font-overflow($clamp: 1);
+    word-break: break-all;
+  }
+
+  &--2 {
+    @include font-overflow($clamp: 2);
+  }
+
+  &--3 {
+    @include font-overflow($clamp: 3);
+  }
+
+  &--4 {
+    @include font-overflow($clamp: 4);
+  }
+}
+
+.no-wrap {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.line-height {
+  &--small {
+    line-height: 1.5rem;
+  }
+}
+
+.label-center {
+  text-align: center;
+}
+
+.label-left {
+  text-align: left;
+}
+
+// .error-form-label {
+//   @include font($c-danger, 1.2rem);
+//   position: absolute;
+//   bottom: -1.5rem;
+//   white-space: nowrap;
+
+//   &--end-user {
+//     @include flexbox();
+//     gap: 0.6rem;
+//   }
+
+//   &--bottom-left {
+//     bottom: -4px;
+//   }
+// }
+
+.text-crossed-out {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.text-pre-line {
+  white-space: pre-line;
+}
+
+.extra-large {
+  font-size: 6.4rem;
+}
