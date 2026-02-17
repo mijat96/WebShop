@@ -5,7 +5,7 @@
 @if (companies$ | async; as companies) {
   <div class="grid">
     @for (company of companies; track $index) {
-      <div class="grid__item">
+      <div class="grid__item" [routerLink]="['/company', company.id]">
         <div class="img-holder"></div>
         <div class="semi-bold-S-label mt--2">{{ company.name }}</div>
       </div>

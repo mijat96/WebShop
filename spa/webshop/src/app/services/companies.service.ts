@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { Company } from '../models/company';
+import { Item } from '../models/item';
 
 @Injectable({
   providedIn: 'root',
@@ -25,6 +26,34 @@ export class CompaniesService {
         delivery: 'Standard',
         pickUp: 'Available',
       },
+      items: [
+        {
+          id: '101',
+          companyId: '1',
+          groupId: 'G1',
+          name: 'Laptop X1',
+          description: 'High performance laptop',
+          image: 'https://placehold.co/600x400',
+          price: 1200,
+          highlited: true,
+          saledPrice: false,
+          available: true,
+          unit: 'pcs',
+        },
+        {
+          id: '102',
+          companyId: '1',
+          groupId: 'G1',
+          name: 'Wireless Mouse',
+          description: 'Ergonomic wireless mouse',
+          image: 'https://placehold.co/600x400',
+          price: 25,
+          highlited: false,
+          saledPrice: true,
+          available: true,
+          unit: 'pcs',
+        },
+      ],
     },
     {
       id: '2',
@@ -41,6 +70,34 @@ export class CompaniesService {
         delivery: 'Express',
         pickUp: 'Curbside',
       },
+      items: [
+        {
+          id: '201',
+          companyId: '2',
+          groupId: 'G2',
+          name: 'Organic Apples',
+          description: 'Fresh organic apples',
+          image: 'https://placehold.co/600x400',
+          price: 3,
+          highlited: true,
+          saledPrice: false,
+          available: true,
+          unit: 'kg',
+        },
+        {
+          id: '202',
+          companyId: '2',
+          groupId: 'G2',
+          name: 'Carrots',
+          description: 'Crunchy carrots',
+          image: 'https://placehold.co/600x400',
+          price: 1.5,
+          highlited: false,
+          saledPrice: false,
+          available: true,
+          unit: 'kg',
+        },
+      ],
     },
     {
       id: '3',
@@ -57,6 +114,34 @@ export class CompaniesService {
         delivery: 'Overnight',
         pickUp: 'Warehouse',
       },
+      items: [
+        {
+          id: '301',
+          companyId: '3',
+          groupId: 'G3',
+          name: 'Shipping Box Small',
+          description: 'Durable small shipping box',
+          image: 'https://placehold.co/600x400',
+          price: 2,
+          highlited: false,
+          saledPrice: false,
+          available: true,
+          unit: 'pcs',
+        },
+        {
+          id: '302',
+          companyId: '3',
+          groupId: 'G3',
+          name: 'Bubble Wrap',
+          description: 'Protective bubble wrap roll',
+          image: 'https://placehold.co/600x400',
+          price: 15,
+          highlited: true,
+          saledPrice: true,
+          available: true,
+          unit: 'roll',
+        },
+      ],
     },
     {
       id: '4',
@@ -73,6 +158,34 @@ export class CompaniesService {
         delivery: 'Standard',
         pickUp: 'Available',
       },
+      items: [
+        {
+          id: '401',
+          companyId: '4',
+          groupId: 'G4',
+          name: 'Quantum Processor',
+          description: 'Next-gen processor',
+          image: 'https://placehold.co/600x400',
+          price: 500,
+          highlited: true,
+          saledPrice: false,
+          available: false,
+          unit: 'pcs',
+        },
+        {
+          id: '402',
+          companyId: '4',
+          groupId: 'G4',
+          name: 'Cooling System',
+          description: 'Advanced cooling system',
+          image: 'https://placehold.co/600x400',
+          price: 150,
+          highlited: false,
+          saledPrice: false,
+          available: true,
+          unit: 'pcs',
+        },
+      ],
     },
     {
       id: '5',
@@ -89,6 +202,34 @@ export class CompaniesService {
         delivery: 'Express',
         pickUp: 'Curbside',
       },
+      items: [
+        {
+          id: '501',
+          companyId: '5',
+          groupId: 'G5',
+          name: 'Solar Panel',
+          description: 'High efficiency solar panel',
+          image: 'https://placehold.co/600x400',
+          price: 300,
+          highlited: true,
+          saledPrice: true,
+          available: true,
+          unit: 'pcs',
+        },
+        {
+          id: '502',
+          companyId: '5',
+          groupId: 'G5',
+          name: 'Inverter',
+          description: 'DC to AC inverter',
+          image: 'https://placehold.co/600x400',
+          price: 250,
+          highlited: false,
+          saledPrice: false,
+          available: true,
+          unit: 'pcs',
+        },
+      ],
     },
     {
       id: '6',
@@ -105,6 +246,34 @@ export class CompaniesService {
         delivery: 'Overnight',
         pickUp: 'Port',
       },
+      items: [
+        {
+          id: '601',
+          companyId: '6',
+          groupId: 'G6',
+          name: 'Cargo Container',
+          description: 'Standard 20ft container',
+          image: 'https://placehold.co/600x400',
+          price: 2000,
+          highlited: false,
+          saledPrice: false,
+          available: true,
+          unit: 'pcs',
+        },
+        {
+          id: '602',
+          companyId: '6',
+          groupId: 'G6',
+          name: 'Pallet',
+          description: 'Wooden pallet',
+          image: 'https://placehold.co/600x400',
+          price: 15,
+          highlited: false,
+          saledPrice: false,
+          available: true,
+          unit: 'pcs',
+        },
+      ],
     },
     {
       id: '7',
@@ -121,6 +290,34 @@ export class CompaniesService {
         delivery: 'Standard',
         pickUp: 'Store',
       },
+      items: [
+        {
+          id: '701',
+          companyId: '7',
+          groupId: 'G7',
+          name: 'Hiking Boots',
+          description: 'Waterproof hiking boots',
+          image: 'https://placehold.co/600x400',
+          price: 120,
+          highlited: true,
+          saledPrice: false,
+          available: true,
+          unit: 'pair',
+        },
+        {
+          id: '702',
+          companyId: '7',
+          groupId: 'G7',
+          name: 'Climbing Rope',
+          description: 'Dynamic climbing rope',
+          image: 'https://placehold.co/600x400',
+          price: 180,
+          highlited: false,
+          saledPrice: true,
+          available: true,
+          unit: 'pcs',
+        },
+      ],
     },
     {
       id: '8',
@@ -137,6 +334,34 @@ export class CompaniesService {
         delivery: 'Express',
         pickUp: 'In-Store',
       },
+      items: [
+        {
+          id: '801',
+          companyId: '8',
+          groupId: 'G8',
+          name: 'Streetwear Jacket',
+          description: 'Stylish streetwear jacket',
+          image: 'https://placehold.co/600x400',
+          price: 85,
+          highlited: true,
+          saledPrice: false,
+          available: true,
+          unit: 'pcs',
+        },
+        {
+          id: '802',
+          companyId: '8',
+          groupId: 'G8',
+          name: 'Sneakers',
+          description: 'Comfortable sneakers',
+          image: 'https://placehold.co/600x400',
+          price: 95,
+          highlited: false,
+          saledPrice: true,
+          available: true,
+          unit: 'pair',
+        },
+      ],
     },
   ];
 
@@ -145,8 +370,8 @@ export class CompaniesService {
     return of(filter);
   }
 
-  getCompany(id: string): Observable<Company | undefined> {
-    const company = this.dummyCompanies.find((c) => c.id === id);
+  getCompany(id: string): Observable<Company> {
+    const company = this.dummyCompanies.find((c) => c.id === id) || ({} as Company);
     return of(company);
   }
 }

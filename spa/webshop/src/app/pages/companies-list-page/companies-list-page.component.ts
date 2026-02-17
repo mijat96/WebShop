@@ -6,12 +6,13 @@ import { AsyncPipe, CommonModule } from '@angular/common';
 import { InputTextModule } from 'primeng/inputtext';
 import { InputIconModule } from 'primeng/inputicon';
 import { IconFieldModule } from 'primeng/iconfield';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-companies-list-page',
   templateUrl: './companies-list-page.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [AsyncPipe, CommonModule, InputTextModule, InputIconModule, IconFieldModule],
+  imports: [AsyncPipe, CommonModule, InputTextModule, InputIconModule, IconFieldModule, RouterLink],
 })
 export class CompaniesListPageComponent implements OnInit {
   private readonly companiesService = inject(CompaniesService);

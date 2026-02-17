@@ -1,3 +1,5 @@
+import { Item } from './item';
+
 export interface Company {
   id: string;
   name: string;
@@ -10,6 +12,7 @@ export interface Company {
   cityCode: number;
   street: string;
   deliveryType: DeliveryType;
+  items: Item[];
 }
 
 export interface DeliveryType {
